@@ -1,0 +1,26 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.shape{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.rect{
+    display: flex;
+}
+#main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}

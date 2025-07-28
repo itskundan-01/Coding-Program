@@ -1,0 +1,1 @@
+console.log("My age is "+age+" and Experience is "+exp+" years.");
