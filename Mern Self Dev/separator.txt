@@ -1,0 +1,1 @@
+This is a text under the main directory to keep things separated
