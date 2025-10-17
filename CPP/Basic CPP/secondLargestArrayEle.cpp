@@ -27,3 +27,4 @@ int main(){
 
 }
 
+//This code works well but is not the efficient one
