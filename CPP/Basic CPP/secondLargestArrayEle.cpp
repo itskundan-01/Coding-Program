@@ -28,5 +28,3 @@ int main(){
 }
 
 //This code works well but is not the efficient one
-
-//To be updated with efficient code with no multiple updation in sLar
