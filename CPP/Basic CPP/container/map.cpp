@@ -11,9 +11,10 @@ int main(){
     m[3] = 10;
     int inpkey = 1;
     if(m.find(inpkey) != m.end()){
-        cout<<m.at(inpkey);
+        cout<<"Element at key: "<<inpkey<<" is "<<m.at(inpkey);
     }
     else cout<<"Key doesnot exist!!.";
-    cout<<m.size();
-
+    cout<<endl<<m.size();
+    m.erase(1);
+    cout<<"\nAfter erasing 1 key-value the size is: "<<m.size();
 }
