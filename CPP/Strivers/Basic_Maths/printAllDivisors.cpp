@@ -3,7 +3,7 @@
 using namespace std;
 
 
-//Efficient method to count
+//Efficient method to count the divisor
 void divisor(int n){
     int count = 0;
     for(int i = 1; i <= sqrt(n); i++){
