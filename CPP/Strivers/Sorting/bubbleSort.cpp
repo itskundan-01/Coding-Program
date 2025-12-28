@@ -2,8 +2,6 @@
 using namespace std;
 
 void bubble_sort(int* arr,int n){
-    for(int a=0;a<n;a++) cin>>arr[a];
-    
     for(int i=0;i<n-1;i++){
         int didSwap =0;
         for(int j=0;j<n-i-1;j++){
@@ -22,6 +20,7 @@ int main(){
     int n;
     cin>>n;
     int arr[n];
+    for(int a=0;a<n;a++) cin>>arr[a];
     bubble_sort(arr,n);
     
 }
