@@ -30,7 +30,7 @@ void reverse(int* arr, int s, int e){
 
 void optimalRotation(int* arr, int n, int d){
     reverse(arr,0,d-1);
-    reverse(arr,d+1,n-1);
+    reverse(arr,d,n-1);
     reverse(arr,0,n-1);
     cout<<"The optimal rotation is: \n";
     for(int i=0;i<n;i++) cout<<arr[i]<<endl;
@@ -47,7 +47,7 @@ int main(){
         cin>>arr[i];
         temp[i]=arr[i];
     }
-    cout<<"Enter the number of places to be rotated: ";
+    cout<<"Enter the number of places to be rotated from left: ";
     cin>>d;
     brutforceRotation(arr,n,d);
     optimalRotation(temp,n,d);
