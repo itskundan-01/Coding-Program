@@ -15,6 +15,39 @@ void bruteforce(int* arr1, int* arr2, int n1, int n2){
     cout<<"]";
 }
 
+void optimal(int* arr1, int* arr2, int n1, int n2){
+    vector<int>unionarr;
+    int i=0,j=0;
+    while(i<n1 && j<n2){
+        if(arr1[i]<=arr2[j]){
+            if(unionarr.size()==0||unionarr.back()!=arr1[i]){
+                unionarr.emplace_back(arr1[i]);
+            }
+            i++;
+        }
+        else{
+            if(unionarr.size()==0 || unionarr.back()!=arr2[j]){
+                unionarr.emplace_back(arr2[j]);
+            }
+            j++;
+        }
+    }
+    while(i<n1){
+        if(unionarr.size()==0 ||unionarr.back()!=arr1[i]){
+            unionarr.emplace_back(arr1[i]);
+        }
+        i++;
+    }
+    while(j<n2){
+        if(unionarr.size()==0 ||unionarr.back()!=arr2[j]){
+            unionarr.emplace_back(arr2[j]);
+        }
+        j++;
+    }
+    cout<<endl;
+    for(int a = 0;a<unionarr.size();a++) cout<<unionarr[a]<<"\n";
+}
+
 int main(){
     int n1,n2;
     cout<<"Enter the size of 1st array: ";
@@ -32,4 +65,5 @@ int main(){
         cin>>arr2[i];
     }
     bruteforce(arr1,arr2,n1,n2);
+    optimal(arr1,arr2,n1,n2);
 }
