@@ -4,6 +4,6 @@ console.log(str,str.toUpperCase());
 console.log(str,str.toLocaleLowerCase());
 console.log(str=str.split(''));
 
-
+//To print the char at 4th index
 console.log(str[4]);
 
