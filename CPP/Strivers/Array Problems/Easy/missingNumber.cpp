@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 int missingNumber(vector<int>& nums);
-//Main code
+
 int main(){
     int n;
     cout<<"Enter the size of Array: ";
