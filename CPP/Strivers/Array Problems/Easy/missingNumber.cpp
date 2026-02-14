@@ -1,5 +1,8 @@
 #include<iostream>
 #include<vector>
+
+//To Find the missing number in array
+
 using namespace std;
 int missingNumber(vector<int>& nums);
 
