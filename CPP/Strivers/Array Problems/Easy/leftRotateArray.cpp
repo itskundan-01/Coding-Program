@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+//To rotate the Array from left
 void brutforceRotation(int* arr, int n, int d){
     d = d%n;
     int temp[d];
