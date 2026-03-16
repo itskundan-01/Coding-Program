@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n,tar,cnt=0;
+    int n,tar,cnt=0,sum=0;
     cout<<"Enter the size of array: ";
     cin>>n;
     vector<int>nums(n);
@@ -11,12 +11,14 @@ int main(){
     for(int i=0;i<n;i++) cin>>nums[i];
     cout<<"Enter the target sum: ";
     cin>>tar;
+    unordered_map<int,int>mpp;
+    mpp[0]=1;
+    int rem=0;
     for(int i=0;i<n;i++){
-        int sum = 0;
-        for(int j=i;j<n;j++){
-            sum +=nums[j];
-            if(sum==tar) cnt +=1;
-        }
+        sum +=nums[i];
+        rem = sum-tar;
+        cnt = cnt+mpp[rem];
+        mpp[sum] +=1;
     }
     cout<<"The output is: "<<cnt;
 }
